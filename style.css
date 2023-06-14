@@ -22,7 +22,13 @@ body {
     background: var(--bg-color);
 }
 
-
+.background_image img {
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+}
 
 .logo img {
     width: 389px;
@@ -76,14 +82,19 @@ body {
 }
 
 #user_email {
-    width: 750px;
+    width: 50%;
     height: 48px;
     margin-bottom: 52px;
+    position: relative;
 }
 
 .button {
     width: 48px;
     height: 48px;
+    z-index: 1;
+    position: absolute;
+    background-color: var(--bt-color);
+    border: none;
 }
 
 .footer_text {
