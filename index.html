@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RocketNews • Desafio Discover</title>
+    <title>RocketNews</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
 </head>
 <body>
-    <header class="logo">
-        <img src="assets/logo.svg" alt="logo escrito RocketNews e homem gigante roxa segurando uma pagína de codígo">
-    </header>
-
     <div class="background_image">
-        <img url="" alt="">
+        <img src="assets/read_news.jpg" alt="">
     </div>
-
-    <section class="about">
-        <h3 class="about_title">atualize ideias e informações em 5 minutos.</h3>
-        <span class="about_subtitle">tudo que você precisa saber para começar seu dia bem e informado</span>
-        <p class="about_paragraph">noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor. perfeito para se preparar para codar ☕</p>
-    </section>
-
-    <span>Insira seu e-mail:</span>
-    <form class="form_email">
-        <label for="user_email"></label>
-        <input type="email" id="user_email" placeholder="oi@rocketseat.com" required> 
-    </form>
-    <span class="footer_text">
-        deixe-me ler primeiro <img src="assets/arrow-right.svg">
-    </span>
+        <div class="conteiner">
+            <header class="logo">
+                <img src="assets/logo.svg" alt="logo escrito RocketNews e homem gigante roxa segurando uma pagína de codígo">
+            </header>
+            <section class="about">
+                <h3 class="about_title">atualize ideias e informações em 5 minutos.</h3>
+                <span class="about_subtitle">tudo que você precisa saber para começar seu dia bem e informado</span>
+                <p class="about_paragraph">noticias sobre o universo Rocketseat, e tudo o que precisa para começar o dia melhor. perfeito para se preparar para codar ☕</p>
+            </section>
+            <div class="form">
+                <span class="descrition">Insira seu e-mail:</span>
+                <form class="form_email">
+                    <label for="user_email"></label>
+                    <input type="email" id="user_email" placeholder="oi@rocketseat.com" required>
+                    <button type="submit" class="button"><img src="assets/send.svg"></button>
+                </form>
+            </div>
+            <span class="footer_text">
+                deixe-me ler primeiro <svg width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="Complete"> <g id="arrow-right"> <g> <polyline data-name="Right" fill="none" id="Right-2" points="16.4 7 21.5 12 16.4 17" stroke="#8257E5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline> <line fill="none" stroke="#8257E5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="2.5" x2="19.2" y1="12" y2="12"></line> </g> </g> </g> </g></svg>
+            </span>
+        </div>
 </body>
 </html>
