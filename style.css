@@ -16,18 +16,25 @@
     --bt-color: #8257E5;
 }
 
+
+
 body {
     /* width: 50%; */
     /*height: 100vh; */
     background: var(--bg-color);
+    position: relative;
+}
+
+.background_image {
+    width: 900px;
+    height: 970px;
+    right: 0;
+    position: absolute;
 }
 
 .background_image img {
-    width: 50%;
-    height: 100vh;
-    right: 0;
-    position: absolute;
-    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .logo img {
@@ -44,16 +51,16 @@ body {
 .about_title {
     color: var(--title-color);
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 41px;
     font-family: 'Work Sans', sans-serif;
 }
 
 .about_subtitle {
     color: white;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 21px;
     font-family: 'League Spartan', sans-serif;
     margin: 8.56px 0 9px 0;
 }
@@ -82,7 +89,8 @@ body {
 }
 
 #user_email {
-    width: 50%;
+    width: 500px;
+    max-width: 500px;
     height: 48px;
     margin-bottom: 52px;
     position: relative;
@@ -109,4 +117,27 @@ body {
 svg {
     height: 18px;
     width: 18px;
+}
+
+@media (max-width: 1663px) {
+    .background_image {
+        display: none;
+    }
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_text {
+        margin: -39px 0 0 36px;
+    }
+    #user_email {
+        width: 800px;
+    }
+}
+
+@media (max-width: 771px) {
+    #user_email {
+        width: auto;
+    }
 }
